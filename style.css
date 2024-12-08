@@ -642,6 +642,7 @@ input:focus::placeholder {
     right: 0;
     z-index: 5;
     background: none;
+    left: 130px;
 }
 
 .arrow-button {
@@ -678,7 +679,7 @@ input:focus::placeholder {
 
 .footer-text {
     display: flex;
-    padding-right: 15px;
+    padding-right: 100px;
 }
 
 .footer-text p {
@@ -689,7 +690,7 @@ input:focus::placeholder {
 
 .socials {
     display: flex;
-    width: 90px;
+    width: 20px;
     gap: 20px;
 }
 

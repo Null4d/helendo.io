@@ -311,11 +311,13 @@
                             <img src="product-img/product1.webp" alt="">
                         </a>
 
-                        <div class="product-link">
-
-                        </div>
+                        <!-- <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag"></div>
+                                <div class="heart"></div>
+                        </div> -->
                     </div>
-                    
+
                     <div class="products-text">
                         <h6>Teapot with black tea</h6>
                         <p>Â£40.00 - Â£635.00</p>
@@ -403,11 +405,15 @@
                     <div class="swiper-slide">
                         <img src="brand-img/brand5.webp" alt="">
                     </div>
+
+                    <div class="swiper-slide">
+                        <img src="brand-img/brand1.webp" alt="">
+                    </div>
+
                 </div>
 
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 
@@ -545,17 +551,19 @@
         });
 
         var swiper = new Swiper(".brandSwiper", {
-            slideClass: 'brand-slide',
+            spaceBetween: 0, 
+            slidesPerView: 'auto',
             loop: true,
             slidesPerView: 5,
-            centeredSlides: true,
             spaceBetween: 30,
-            grabCursor: true,
             pagination: {
-                el: ".swiper-pagination",
+                nextEl: '.swiper-button-next', 
+                prevEl: '.swiper-button-prev',
                 clickable: true,
             },
         });
+
+
 
         function openVideo() {
             const videoModal = document.getElementById('video-modal');

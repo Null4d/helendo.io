@@ -17,6 +17,8 @@ body {
     position: relative;
 }
 
+
+
 ::selection {
     background-color: #dfa804;
     color: white;
@@ -51,6 +53,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 39px 0;
+    max-width: 1170px;
+    min-width: 1170px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .header-row__left {
@@ -85,6 +91,7 @@ header {
 .header-row__mid ul li a {
     color: black;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .header-iconbox {
@@ -241,7 +248,7 @@ header {
 
 .swiper-left h3 {
     color: black;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 1.1;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -403,6 +410,9 @@ header {
     justify-content: space-between;
     width: 100%;
     padding-bottom: 50px;
+    min-width: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .product-header__title h4 {
@@ -431,7 +441,7 @@ header {
 .products {
     position: relative;
     padding: 11px;
-    width: 290px;
+    width: 100%;
 }
 
 .products img {
@@ -485,12 +495,25 @@ header {
     transform: translateY(0);
 }
 
-.plus,
-.bag,
+
+.plus {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.bag {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
 .heart {
     position: absolute;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(35px);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
@@ -653,12 +676,11 @@ header {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 1170px;
     margin: auto;
     padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer-container {
@@ -667,10 +689,15 @@ footer {
     justify-content: space-between;
     width: 100%;
     font-weight: 400;
+    max-width: 1170px;
+    min-width: 1088px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .footer-box {
     position: relative;
+    padding-bottom: 20px;
 }
 
 .footer-box h4 {
@@ -698,11 +725,11 @@ footer {
 .input-container {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    position: relative;
 }
 
 .footer-box input {
-    width: 225px;
+    width: 100%;
     border: none;
     padding: 7px 0px;
     border-bottom: 1px solid #ddd;
@@ -731,7 +758,6 @@ input:focus::placeholder {
     right: 0;
     z-index: 5;
     background: none;
-    left: 130px;
 }
 
 .arrow-button {
@@ -748,13 +774,13 @@ input:focus::placeholder {
 }
 
 .footer-bottom {
-    width: 400%;
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 100px;
     border-top: 1px solid #ededed;
+    min-width: 0px;
 }
 
 .footer-rights {
@@ -774,7 +800,7 @@ input:focus::placeholder {
 .footer-text p {
     font-size: 16px;
     font-weight: 500;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 .socials {
@@ -784,5 +810,127 @@ input:focus::placeholder {
 }
 
 .socials img {
-    width: 100%;
+    width: 21px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header-row {
+        padding-right: 20px;
+        padding-left: 20px;
+        min-width: 500px;
+    }
+
+    .swiper-left h3 {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 1055px) {
+
+    .ul2 {
+        gap: 12px;
+    }
+
+    .mail-control h4 {
+        font-size: 22px;
+    }
+
+    .mail-control p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header-row__mid ul {
+        display: none;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .ul2 {
+        display: none;
+    }
+
+    .mail-control input[type="email"] {
+        padding: 20px 250px 20px 20px;
+    }
+
+    .mail-control {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .product-header {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-header__title h4 {
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-box:last-of-type {
+        padding-top: 20px;
+    }
+
+    .footer-box button {
+        right: 0;
+    }
+
+    .footer-bottom {
+        gap: 350px;
+        min-width: 1080px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-link {
+        top: 150px;
+    }
+
+    .mail-control {
+        display: block;
+        margin-left: 0;
+    }
+
+    .mail-control .input-container {
+        padding-top: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-link {
+        top: 265px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }

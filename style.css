@@ -783,10 +783,6 @@ input:focus::placeholder {
     min-width: 0px;
 }
 
-.footer-rights {
-    padding-left: 15px;
-}
-
 .footer-rights h6 {
     font-size: 16px;
     font-weight: 400;
@@ -794,7 +790,6 @@ input:focus::placeholder {
 
 .footer-text {
     display: flex;
-    padding-right: 100px;
 }
 
 .footer-text p {
@@ -805,7 +800,6 @@ input:focus::placeholder {
 
 .socials {
     display: flex;
-    width: 20px;
     gap: 20px;
 }
 
@@ -891,9 +885,9 @@ input:focus::placeholder {
     }
 
     .footer-bottom {
-        gap: 350px;
-        min-width: 1080px;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
 }
 
@@ -903,7 +897,7 @@ input:focus::placeholder {
     }
 
     .product-link {
-        top: 150px;
+        top: 125px;
     }
 
     .mail-control {

@@ -10,8 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,631 +23,556 @@
         rel="stylesheet">
 </head>
 
-<body class="box-home">
-    <div id="main-wrapper">
-        <header>
-            <div class="header-title">
-                <h1>Helendo</h1>
-            </div>
-
-            <div class="header-row">
-                <div class="header-row__left">
-                    <div class="header-row__phone">
-                        <a href="">
-                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.1007 13.359L15.5719 12.8272H15.5719L16.1007 13.359ZM16.5562 12.9062L17.085 13.438H17.085L16.5562 12.9062ZM18.9728 12.5894L18.6146 13.2483L18.9728 12.5894ZM20.8833 13.628L20.5251 14.2869L20.8833 13.628ZM21.4217 16.883L21.9505 17.4148L21.4217 16.883ZM20.0011 18.2954L19.4723 17.7636L20.0011 18.2954ZM18.6763 18.9651L18.7459 19.7119H18.7459L18.6763 18.9651ZM8.81536 14.7266L9.34418 14.1947L8.81536 14.7266ZM4.00289 5.74561L3.2541 5.78816L3.2541 5.78816L4.00289 5.74561ZM10.4775 7.19738L11.0063 7.72922H11.0063L10.4775 7.19738ZM10.6342 4.54348L11.2346 4.09401L10.6342 4.54348ZM9.37326 2.85908L8.77286 3.30855V3.30855L9.37326 2.85908ZM6.26145 2.57483L6.79027 3.10667H6.79027L6.26145 2.57483ZM4.69185 4.13552L4.16303 3.60368H4.16303L4.69185 4.13552ZM12.0631 11.4972L12.5919 10.9654L12.0631 11.4972ZM16.6295 13.8909L17.085 13.438L16.0273 12.3743L15.5719 12.8272L16.6295 13.8909ZM18.6146 13.2483L20.5251 14.2869L21.2415 12.9691L19.331 11.9305L18.6146 13.2483ZM20.8929 16.3511L19.4723 17.7636L20.5299 18.8273L21.9505 17.4148L20.8929 16.3511ZM18.6067 18.2184C17.1568 18.3535 13.4056 18.2331 9.34418 14.1947L8.28654 15.2584C12.7186 19.6653 16.9369 19.8805 18.7459 19.7119L18.6067 18.2184ZM9.34418 14.1947C5.4728 10.3453 4.83151 7.10765 4.75168 5.70305L3.2541 5.78816C3.35456 7.55599 4.14863 11.144 8.28654 15.2584L9.34418 14.1947ZM10.7195 8.01441L11.0063 7.72922L9.9487 6.66555L9.66189 6.95073L10.7195 8.01441ZM11.2346 4.09401L9.97365 2.40961L8.77286 3.30855L10.0338 4.99296L11.2346 4.09401ZM5.73263 2.04299L4.16303 3.60368L5.22067 4.66736L6.79027 3.10667L5.73263 2.04299ZM10.1907 7.48257C9.66189 6.95073 9.66117 6.95144 9.66045 6.95216C9.66021 6.9524 9.65949 6.95313 9.659 6.95362C9.65802 6.95461 9.65702 6.95561 9.65601 6.95664C9.65398 6.95871 9.65188 6.96086 9.64972 6.9631C9.64539 6.96759 9.64081 6.97245 9.63599 6.97769C9.62634 6.98816 9.61575 7.00014 9.60441 7.01367C9.58174 7.04072 9.55605 7.07403 9.52905 7.11388C9.47492 7.19377 9.41594 7.2994 9.36589 7.43224C9.26376 7.70329 9.20901 8.0606 9.27765 8.50305C9.41189 9.36833 10.0078 10.5113 11.5343 12.0291L12.5919 10.9654C11.1634 9.54499 10.8231 8.68059 10.7599 8.27309C10.7298 8.07916 10.761 7.98371 10.7696 7.96111C10.7748 7.94713 10.7773 7.9457 10.7709 7.95525C10.7677 7.95992 10.7624 7.96723 10.7541 7.97708C10.75 7.98201 10.7451 7.98759 10.7394 7.99381C10.7365 7.99692 10.7335 8.00019 10.7301 8.00362C10.7285 8.00534 10.7268 8.00709 10.725 8.00889C10.7241 8.00979 10.7232 8.0107 10.7223 8.01162C10.7219 8.01208 10.7212 8.01278 10.7209 8.01301C10.7202 8.01371 10.7195 8.01441 10.1907 7.48257ZM11.5343 12.0291C13.0613 13.5474 14.2096 14.1383 15.0763 14.2713C15.5192 14.3392 15.8763 14.285 16.1472 14.1841C16.28 14.1346 16.3858 14.0763 16.4658 14.0227C16.5058 13.9959 16.5392 13.9704 16.5663 13.9479C16.5799 13.9367 16.5919 13.9262 16.6024 13.9166C16.6077 13.9118 16.6126 13.9073 16.6171 13.903C16.6194 13.9008 16.6215 13.8987 16.6236 13.8967C16.6246 13.8957 16.6256 13.8947 16.6266 13.8937C16.6271 13.8932 16.6279 13.8925 16.6281 13.8923C16.6288 13.8916 16.6295 13.8909 16.1007 13.359C15.5719 12.8272 15.5726 12.8265 15.5733 12.8258C15.5735 12.8256 15.5742 12.8249 15.5747 12.8244C15.5756 12.8235 15.5765 12.8226 15.5774 12.8217C15.5793 12.82 15.581 12.8183 15.5827 12.8166C15.5862 12.8133 15.5895 12.8103 15.5926 12.8074C15.5988 12.8018 15.6044 12.7969 15.6094 12.7929C15.6192 12.7847 15.6265 12.7795 15.631 12.7764C15.6403 12.7702 15.6384 12.773 15.6236 12.7785C15.5991 12.7876 15.501 12.8189 15.3038 12.7886C14.8905 12.7253 14.02 12.3853 12.5919 10.9654L11.5343 12.0291ZM9.97365 2.40961C8.95434 1.04802 6.94996 0.83257 5.73263 2.04299L6.79027 3.10667C7.32195 2.578 8.26623 2.63181 8.77286 3.30855L9.97365 2.40961ZM4.75168 5.70305C4.73201 5.35694 4.89075 4.9954 5.22067 4.66736L4.16303 3.60368C3.62571 4.13795 3.20329 4.89425 3.2541 5.78816L4.75168 5.70305ZM19.4723 17.7636C19.1975 18.0369 18.9029 18.1908 18.6067 18.2184L18.7459 19.7119C19.4805 19.6434 20.0824 19.2723 20.5299 18.8273L19.4723 17.7636ZM11.0063 7.72922C11.9908 6.7503 12.064 5.2019 11.2346 4.09401L10.0338 4.99295C10.4373 5.53193 10.3773 6.23938 9.9487 6.66555L11.0063 7.72922ZM20.5251 14.2869C21.3429 14.7315 21.4703 15.7769 20.8929 16.3511L21.9505 17.4148C23.2908 16.0821 22.8775 13.8584 21.2415 12.9691L20.5251 14.2869ZM17.085 13.438C17.469 13.0562 18.0871 12.9616 18.6146 13.2483L19.331 11.9305C18.2474 11.3414 16.9026 11.5041 16.0273 12.3743L17.085 13.438Z"
-                                    fill="#1C274C" />
-                            </svg>
-                        </a>
+<body>
+    <div class="main-container">
+        <div id="main-wrapper">
+            <header class="header">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a class="header-top__logo" href="">
+                                    <img src="header-img/logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <p>+8 (268) 654 - 587- 68 </p>
+                    <!--End Container-->
                 </div>
+                <!--End HeaderTop-->
 
-                <div class="header-row__mid">
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="">Shop</a>
-                        </li>
-
-                        <li>
-                            <a href="">Pages</a>
-                        </li>
-
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="header-row__right">
-                    <div class="header-iconbox">
-                        <div class="header-icon">
-                            <a href="">
+                <div class="container">
+                    <div class="row middle-xs">
+                        <div class="col-lg-3">
+                            <a class="header-phone" href="">
                                 <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg fill="" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
-                                        fill-rule="evenodd" />
+                                        d="M16.1007 13.359L15.5719 12.8272H15.5719L16.1007 13.359ZM16.5562 12.9062L17.085 13.438H17.085L16.5562 12.9062ZM18.9728 12.5894L18.6146 13.2483L18.9728 12.5894ZM20.8833 13.628L20.5251 14.2869L20.8833 13.628ZM21.4217 16.883L21.9505 17.4148L21.4217 16.883ZM20.0011 18.2954L19.4723 17.7636L20.0011 18.2954ZM18.6763 18.9651L18.7459 19.7119H18.7459L18.6763 18.9651ZM8.81536 14.7266L9.34418 14.1947L8.81536 14.7266ZM4.00289 5.74561L3.2541 5.78816L3.2541 5.78816L4.00289 5.74561ZM10.4775 7.19738L11.0063 7.72922H11.0063L10.4775 7.19738ZM10.6342 4.54348L11.2346 4.09401L10.6342 4.54348ZM9.37326 2.85908L8.77286 3.30855V3.30855L9.37326 2.85908ZM6.26145 2.57483L6.79027 3.10667H6.79027L6.26145 2.57483ZM4.69185 4.13552L4.16303 3.60368H4.16303L4.69185 4.13552ZM12.0631 11.4972L12.5919 10.9654L12.0631 11.4972ZM16.6295 13.8909L17.085 13.438L16.0273 12.3743L15.5719 12.8272L16.6295 13.8909ZM18.6146 13.2483L20.5251 14.2869L21.2415 12.9691L19.331 11.9305L18.6146 13.2483ZM20.8929 16.3511L19.4723 17.7636L20.5299 18.8273L21.9505 17.4148L20.8929 16.3511ZM18.6067 18.2184C17.1568 18.3535 13.4056 18.2331 9.34418 14.1947L8.28654 15.2584C12.7186 19.6653 16.9369 19.8805 18.7459 19.7119L18.6067 18.2184ZM9.34418 14.1947C5.4728 10.3453 4.83151 7.10765 4.75168 5.70305L3.2541 5.78816C3.35456 7.55599 4.14863 11.144 8.28654 15.2584L9.34418 14.1947ZM10.7195 8.01441L11.0063 7.72922L9.9487 6.66555L9.66189 6.95073L10.7195 8.01441ZM11.2346 4.09401L9.97365 2.40961L8.77286 3.30855L10.0338 4.99296L11.2346 4.09401ZM5.73263 2.04299L4.16303 3.60368L5.22067 4.66736L6.79027 3.10667L5.73263 2.04299ZM10.1907 7.48257C9.66189 6.95073 9.66117 6.95144 9.66045 6.95216C9.66021 6.9524 9.65949 6.95313 9.659 6.95362C9.65802 6.95461 9.65702 6.95561 9.65601 6.95664C9.65398 6.95871 9.65188 6.96086 9.64972 6.9631C9.64539 6.96759 9.64081 6.97245 9.63599 6.97769C9.62634 6.98816 9.61575 7.00014 9.60441 7.01367C9.58174 7.04072 9.55605 7.07403 9.52905 7.11388C9.47492 7.19377 9.41594 7.2994 9.36589 7.43224C9.26376 7.70329 9.20901 8.0606 9.27765 8.50305C9.41189 9.36833 10.0078 10.5113 11.5343 12.0291L12.5919 10.9654C11.1634 9.54499 10.8231 8.68059 10.7599 8.27309C10.7298 8.07916 10.761 7.98371 10.7696 7.96111C10.7748 7.94713 10.7773 7.9457 10.7709 7.95525C10.7677 7.95992 10.7624 7.96723 10.7541 7.97708C10.75 7.98201 10.7451 7.98759 10.7394 7.99381C10.7365 7.99692 10.7335 8.00019 10.7301 8.00362C10.7285 8.00534 10.7268 8.00709 10.725 8.00889C10.7241 8.00979 10.7232 8.0107 10.7223 8.01162C10.7219 8.01208 10.7212 8.01278 10.7209 8.01301C10.7202 8.01371 10.7195 8.01441 10.1907 7.48257ZM11.5343 12.0291C13.0613 13.5474 14.2096 14.1383 15.0763 14.2713C15.5192 14.3392 15.8763 14.285 16.1472 14.1841C16.28 14.1346 16.3858 14.0763 16.4658 14.0227C16.5058 13.9959 16.5392 13.9704 16.5663 13.9479C16.5799 13.9367 16.5919 13.9262 16.6024 13.9166C16.6077 13.9118 16.6126 13.9073 16.6171 13.903C16.6194 13.9008 16.6215 13.8987 16.6236 13.8967C16.6246 13.8957 16.6256 13.8947 16.6266 13.8937C16.6271 13.8932 16.6279 13.8925 16.6281 13.8923C16.6288 13.8916 16.6295 13.8909 16.1007 13.359C15.5719 12.8272 15.5726 12.8265 15.5733 12.8258C15.5735 12.8256 15.5742 12.8249 15.5747 12.8244C15.5756 12.8235 15.5765 12.8226 15.5774 12.8217C15.5793 12.82 15.581 12.8183 15.5827 12.8166C15.5862 12.8133 15.5895 12.8103 15.5926 12.8074C15.5988 12.8018 15.6044 12.7969 15.6094 12.7929C15.6192 12.7847 15.6265 12.7795 15.631 12.7764C15.6403 12.7702 15.6384 12.773 15.6236 12.7785C15.5991 12.7876 15.501 12.8189 15.3038 12.7886C14.8905 12.7253 14.02 12.3853 12.5919 10.9654L11.5343 12.0291ZM9.97365 2.40961C8.95434 1.04802 6.94996 0.83257 5.73263 2.04299L6.79027 3.10667C7.32195 2.578 8.26623 2.63181 8.77286 3.30855L9.97365 2.40961ZM4.75168 5.70305C4.73201 5.35694 4.89075 4.9954 5.22067 4.66736L4.16303 3.60368C3.62571 4.13795 3.20329 4.89425 3.2541 5.78816L4.75168 5.70305ZM19.4723 17.7636C19.1975 18.0369 18.9029 18.1908 18.6067 18.2184L18.7459 19.7119C19.4805 19.6434 20.0824 19.2723 20.5299 18.8273L19.4723 17.7636ZM11.0063 7.72922C11.9908 6.7503 12.064 5.2019 11.2346 4.09401L10.0338 4.99295C10.4373 5.53193 10.3773 6.23938 9.9487 6.66555L11.0063 7.72922ZM20.5251 14.2869C21.3429 14.7315 21.4703 15.7769 20.8929 16.3511L21.9505 17.4148C23.2908 16.0821 22.8775 13.8584 21.2415 12.9691L20.5251 14.2869ZM17.085 13.438C17.469 13.0562 18.0871 12.9616 18.6146 13.2483L19.331 11.9305C18.2474 11.3414 16.9026 11.5041 16.0273 12.3743L17.085 13.438Z"
+                                        fill="#1C274C" />
                                 </svg>
+                                <p>+8 (268) 654 - 587- 68 </p>
                             </a>
                         </div>
+                        <!--End col-->
 
-                        <div class="header-icon">
-                            <a href="">
-                                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg viewBox="0 -0.5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <div class="col-lg-6">
+                            <ul class="header-nav">
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
 
-                                    <title>heart-like</title>
-                                    <desc>Created with Sketch Beta.</desc>
-                                    <defs>
+                                <li>
+                                    <a href="">Shop</a>
+                                </li>
 
-                                    </defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="" fill-rule="evenodd"
-                                        sketch:type="MSPage">
-                                        <g id="Icon-Set" sketch:type="MSLayerGroup"
-                                            transform="translate(-100.000000, -880.000000)" fill="">
-                                            <path
-                                                d="M128,893.682 L116,908 L104,893.623 C102.565,891.629 102,890.282 102,888.438 C102,884.999 104.455,881.904 108,881.875 C110.916,881.851 114.222,884.829 116,887.074 C117.731,884.908 121.084,881.875 124,881.875 C127.451,881.875 130,884.999 130,888.438 C130,890.282 129.553,891.729 128,893.682 L128,893.682 Z M124,880 C120.667,880 118.145,881.956 116,884 C113.957,881.831 111.333,880 108,880 C103.306,880 100,884.036 100,888.438 C100,890.799 100.967,892.499 102.026,894.097 L114.459,909.003 C115.854,910.48 116.118,910.48 117.513,909.003 L129.974,894.097 C131.22,892.499 132,890.799 132,888.438 C132,884.036 128.694,880 124,880 L124,880 Z"
-                                                id="heart-like" sketch:type="MSShapeGroup">
+                                <li>
+                                    <a href="">Pages</a>
+                                </li>
 
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!--End col-->
 
-                        <div class="header-icon">
-                            <a href="">
-                                <?xml version="1.0" encoding="utf-8"?>
+                        <div class="col-lg-3">
+                            <div class="header-bar">
+                                <a class="header-bar__icon" href="">
+                                    <img src="header-img/search.svg" alt="">
+                                </a>
 
-                                <!DOCTYPE svg
-                                    PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-                                    xml:space="preserve">
-                                    <g>
-                                        <rect x="214.097" y="227.298" class="st0" />
-                                        <path class="st0" d="M507.908,365.653l0.025-0.016l-0.017-0.024c-0.008-0.025-0.114-0.378-0.32-1.009
-		c-0.066-0.262-0.147-0.492-0.221-0.746c-8.568-27.485-17.071-55.01-25.525-82.543c-4.206-13.709-8.396-27.435-12.569-41.16
-		c-1.788-5.863-4.387-12.168-6.495-18.383c-1.041-3.099-1.976-6.149-2.615-9.035c-0.656-2.87-1.017-5.576-1.017-7.929
-		c0-1.09,0.074-2.107,0.23-3.042c1.131-7.116,2.378-17.538,2.378-28.64c-0.008-9.88-0.952-20.277-4.125-29.542
-		c-1.59-4.616-3.772-8.986-6.814-12.758c-3.017-3.756-6.961-6.887-11.749-8.823l0.361,0.148l-0.361-0.148l-0.033-0.016
-		c-2.935-1.189-5.977-1.64-8.912-1.632c-5.691,0.025-11.061,1.583-16.006,3.288c-4.92,1.705-9.446,3.64-12.848,4.707
-		c-12.136,3.861-24.303,7.535-36.528,10.922c-1.066-9.216-2.296-18.449-4.264-27.632c-2.477-11.545-6.133-23.024-12.103-34.208
-		c-9.158-17.104-22.302-31.518-38.164-41.702c-15.865-10.175-34.482-16.087-54.362-16.07c-0.02,0-0.024,0-0.044,0
-		c-19.335-0.017-37.512,5.592-53.104,15.284c-15.606,9.708-28.673,23.507-37.97,39.955c-6.494,11.495-10.471,23.376-13.152,35.364
-		c-2.153,9.609-3.477,19.301-4.608,29.009c-14.066-3.912-28.046-8.2-42.014-12.66c-3.492-1.115-7.268-2.492-11.236-3.624
-		c-3.96-1.139-8.117-2.066-12.52-2.066c-3.751-0.016-7.74,0.721-11.459,2.706c-3.719,1.984-7.014,5.132-9.671,9.314
-		c-4.128,6.47-6.527,13.743-7.929,21.073c-1.39,7.346-1.808,14.8-1.808,21.761c0,2.189,0.048,4.329,0.106,6.404
-		c0.135,3.83,0.812,7.568,1.381,11.143c0.59,3.574,1.079,6.953,1.07,9.691c0,1.706-0.18,3.124-0.509,4.215
-		c-2.525,8.405-5.063,16.792-7.604,25.197c-10.528,34.724-21.195,69.424-31.936,104.09c-2.887,9.331-6.076,19.187-8.561,29.272
-		C1.804,375.862,0.008,386.193,0,396.533c0,8.478,1.226,16.98,4.342,25.18c3.116,8.216,8.134,16.078,15.402,23.212
-		c6.765,6.642,14.714,11.857,23.254,16.071c12.823,6.322,27.024,10.389,41.07,13.431c14.049,3.017,27.968,5.001,40.128,6.97
-		c39.373,6.379,79.352,10.003,119.227,10.823c4.37,0.082,8.728,0.123,13.09,0.123c34.08,0,68.156-2.632,101.815-6.789
-		c36.585-4.551,76.164-9.84,111.183-25.524c14.242-6.395,25.016-16.219,32.051-27.968C508.63,420.327,512,406.741,512,392.761
-		C512,383.791,510.606,374.648,507.908,365.653z M175.949,128.397c1.354-11.249,4.342-22.023,8.745-31.789
-		c6.601-14.669,16.341-27.033,28.354-35.659c6.01-4.32,12.594-7.724,19.723-10.052c7.134-2.338,14.821-3.608,23.085-3.608
-		c11.02,0,21.012,2.254,30.035,6.289c13.513,6.051,24.91,16.194,33.526,29.19c8.598,12.971,14.329,28.755,16.354,45.629
-		l2.648,24.049c-5.412,1.263-10.914,2.476-16.464,3.6c-22.258,4.534-45.371,7.682-66.1,7.675
-		c-16.841,0.008-35.265-2.066-53.517-5.28c-9.814-1.739-19.568-3.788-29.034-5.994L175.949,128.397z M82.182,163.819
-		c0.418-3.034,0.968-5.748,1.57-8.002c0.32-1.214,0.664-2.272,0.996-3.182c1.886,0.583,4.15,1.312,6.728,2.133
-		c7.556,2.426,17.829,5.731,29.874,9.331c18.075,5.403,40.177,11.462,63.483,16.202c23.324,4.73,47.835,8.166,71.023,8.166
-		c18.847,0,38.558-2.28,57.806-5.658c28.858-5.084,56.686-12.692,78.414-19.219c10.856-3.263,20.187-6.264,27.288-8.543
-		c2.96-0.935,5.51-1.755,7.609-2.412c0.853,2.362,1.73,5.732,2.354,9.774c0.68,4.379,1.09,9.52,1.082,15.103
-		c0.008,10.372-1.41,22.286-4.805,34.052c-3.403,11.782-8.782,23.401-16.579,33.535c-3.723,4.838-8.314,9.339-13.66,13.48
-		c-9.34,7.264-20.99,13.406-33.684,18.358c-19.031,7.462-40.357,12.283-59.482,15.161c-9.569,1.435-18.592,2.402-26.513,3.009
-		c-7.912,0.607-14.738,0.828-19.83,0.828c-7.769,0.017-19.514-0.549-33.101-2.091c-20.388-2.304-45.022-6.871-67.23-14.841
-		c-11.101-3.985-21.589-8.806-30.632-14.48c-9.048-5.674-16.628-12.176-22.2-19.424c-7.802-10.134-13.18-21.753-16.575-33.535
-		c-3.403-11.774-4.817-23.68-4.813-34.052C81.305,172.51,81.629,167.869,82.182,163.819z M482.851,407.454
-		c-1.689,5.993-4.518,11.167-8.561,15.693c-4.05,4.526-9.372,8.413-16.201,11.495c-10.077,4.543-24.123,8.856-40.284,12.57
-		c-24.262,5.6-53.336,9.946-82.026,12.864c-28.69,2.928-57.052,4.436-79.924,4.436c-30.497,0-70.732-2.682-108.551-7.814
-		c-18.907-2.574-37.23-5.756-53.402-9.487c-16.161-3.714-30.219-8.027-40.288-12.57c-4.542-2.05-8.425-4.477-11.704-7.182
-		c-4.916-4.092-8.507-8.814-10.972-14.267c-2.452-5.461-3.787-11.709-3.787-18.842c0-6.478,1.115-13.676,3.546-21.482
-		c12.754-40.914,28.156-90.947,40.526-131.714c3.284,6.552,7.183,12.955,11.852,19.031c5.206,6.765,11.348,12.701,18.109,17.948
-		c11.831,9.167,25.52,16.235,39.819,21.843c21.466,8.396,44.38,13.496,64.828,16.588c10.229,1.542,19.83,2.566,28.317,3.214
-		c8.503,0.647,15.874,0.91,21.707,0.91c8.884,0,21.38-0.607,35.888-2.255c21.77-2.484,47.996-7.256,72.79-16.144
-		c12.405-4.444,24.466-9.922,35.429-16.792c10.954-6.88,20.859-15.17,28.672-25.312c4.683-6.076,8.577-12.488,11.865-19.031
-		c12.356,40.768,27.764,90.816,40.521,131.731c2.428,7.789,3.542,14.988,3.542,21.466
-		C484.565,399.107,483.975,403.469,482.851,407.454z" />
-                                    </g>
-                                </svg>
-                            </a>
+                                <a class="header-bar__icon" href="">
+                                    <img src="header-img/search.svg" alt="">
+                                </a>
+
+                                <a class="header-bar__icon" href="">
+                                    <img src="header-img/search.svg" alt="">
+                                </a>
+
+                                <div id="menu-btn-container">
+                                    <div id="menu-btn">
+                                        <input type="checkbox" id="menu-checkbox" />
+                                        <label for="menu-checkbox" id="menu-label">
+                                            <div id="menu-bar"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
 
-                        <div class="header-icon">
-                            <div id="menu-btn-container">
-                                <div id="menu-btn">
-                                    <input type="checkbox" id="menu-checkbox" />
-                                    <label for="menu-checkbox" id="menu-label">
-                                        <div id="menu-bar"></div>
-                                    </label>
+            <section class="hero">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-box">
+                                <div class="swiper-left">
+                                    <p>Helendo store</p>
+                                    <h3>Hailey <br> Wooden Chair</h3>
+                                    <span>Discover now</span>
+                                </div>
+
+                                <div class="swiper-right">
+                                    <img src="swiper-img/home-box-1.webp" alt="">
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--Header End-->
+                        <div class="swiper-slide">
+                            <div class="swiper-box">
+                                <div class="swiper-left">
+                                    <p>Helendo store</p>
+                                    <h3>Hailey <br> Wooden Chair</h3>
+                                    <span>Discover now</span>
+                                </div>
 
-        <section class="hero">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-box">
-                            <div class="swiper-left">
-                                <p>Helendo store</p>
-                                <h3>Hailey <br> Wooden Chair</h3>
-                                <span>Discover now</span>
-                            </div>
-
-                            <div class="swiper-right">
-                                <img src="swiper-img/home-box-1.webp" alt="">
+                                <div class="swiper-right">
+                                    <img src="swiper-img/home-box-2.webp" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="swiper-box">
-                            <div class="swiper-left">
-                                <p>Helendo store</p>
-                                <h3>Hailey <br> Wooden Chair</h3>
-                                <span>Discover now</span>
-                            </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <!--Hero End-->
 
-                            <div class="swiper-right">
-                                <img src="swiper-img/home-box-2.webp" alt="">
+            <section class="about">
+                <div class="about-container">
+                    <h5>Helendo Store</h5>
+                    <p>When you start with a portrait and search for a pure form, a clear volume, through successive
+                        eliminations, <br> you arrive inevitably at the egg. Likewise, starting with the egg and
+                        following
+                        the same process in reverse, one <br> finishes with the portrait. </p>
+                </div>
+            </section>
+            <!--About End-->
+
+            <section class="video-box">
+                <div class="video">
+                    <img src="video/video-banner2.webp" alt="">
+                    <div class="video-icon">
+
+                        <div class="play-button" onclick="openVideo()">
+                            <div class="triangle"></div>
+                        </div>
+
+                        <div id="video-modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeVideo()">&times;</span>
+                                <iframe id="youtube-video" width="1000" height="600" src="" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe>
                             </div>
                         </div>
+
                     </div>
                 </div>
+            </section>
+            <!--Video-box End-->
 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </section>
-        <!--Hero End-->
+            <section class="product">
+                <div class="product-header">
 
-        <section class="about">
-            <div class="about-container">
-                <h5>Helendo Store</h5>
-                <p>When you start with a portrait and search for a pure form, a clear volume, through successive
-                    eliminations, <br> you arrive inevitably at the egg. Likewise, starting with the egg and following
-                    the same process in reverse, one <br> finishes with the portrait. </p>
-            </div>
-        </section>
-        <!--About End-->
-
-        <section class="video-box">
-            <div class="video">
-                <img src="video/video-banner2.webp" alt="">
-                <div class="video-icon">
-
-                    <div class="play-button" onclick="openVideo()">
-                        <div class="triangle"></div>
+                    <div class="product-header__title">
+                        <h4>Popular Products</h4>
                     </div>
 
-                    <div id="video-modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeVideo()">&times;</span>
-                            <iframe id="youtube-video" width="1000" height="600" src="" frameborder="0"
-                                allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
+                    <div class="product-header__list">
+                        <ul>
+                            <li class="">
+                                <a href="">
+                                    All Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    Accessories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    Chair
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    Decoration
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    Furniture
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    Table
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="product-container">
+                    <div class="products">
+                        <div class="product-info">
+                            <h6>Out Of Stocks</h6>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--Video-box End-->
-
-        <section class="product">
-            <div class="product-header">
-
-                <div class="product-header__title">
-                    <h4>Popular Products</h4>
-                </div>
-
-                <div class="product-header__list">
-                    <ul>
-                        <li class="">
-                            <a href="">
-                                All Products
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product1.webp" alt="">
                             </a>
-                        </li>
 
-                        <li>
-                            <a href="">
-                                Accessories
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product2.webp" alt="">
                             </a>
-                        </li>
 
-                        <li>
-                            <a href="">
-                                Chair
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product3.webp" alt="">
                             </a>
-                        </li>
 
-                        <li>
-                            <a href="">
-                                Decoration
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product4.webp" alt="">
                             </a>
-                        </li>
 
-                        <li>
-                            <a href="">
-                                Furniture
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product5.webp" alt="">
                             </a>
-                        </li>
 
-                        <li>
-                            <a href="">
-                                Table
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product6.webp" alt="">
                             </a>
-                        </li>
 
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="products">
-                    <div class="product-info">
-                        <h6>Out Of Stocks</h6>
-                    </div>
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product1.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
                             </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        </div>
+
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
                         </div>
                     </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product7.webp" alt="">
+                            </a>
 
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product2.webp" alt="">
-                        </a>
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
                         </div>
                     </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
+                    <div class="products">
+                        <div class="product-wrap">
+                            <a class="product-item" href="">
+                                <img src="product-img/product8.webp" alt="">
+                            </a>
 
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product3.webp" alt="">
-                        </a>
+                            <div class="product-link">
+                                <div class="plus"></div>
+                                <div class="bag">
+                                    <img src="header-img/bag.svg" alt="">
+                                </div>
+                                <div class="heart">
+                                    <img src="header-img/heart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="products-text">
+                            <h6>Teapot with black tea</h6>
+                            <p>Â£40.00 - Â£635.00</p>
                         </div>
                     </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
                 </div>
+            </section>
+            <!--Product End-->
 
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product4.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+            <section class="brand">
+                <div class="swiper brandSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand1.webp" alt="">
                         </div>
-                    </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
-
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product5.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand2.webp" alt="">
                         </div>
-                    </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
-
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product6.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand3.webp" alt="">
                         </div>
-                    </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
-
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product7.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand4.webp" alt="">
                         </div>
-                    </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
-                </div>
-
-                <div class="products">
-                    <div class="product-wrap">
-                        <a class="product-item" href="">
-                            <img src="product-img/product8.webp" alt="">
-                        </a>
-
-                        <div class="product-link">
-                            <div class="plus"></div>
-                            <div class="bag">
-                                <img src="header-img/bag.svg" alt="">
-                            </div>
-                            <div class="heart">
-                                <img src="header-img/heart.svg" alt="">
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand5.webp" alt="">
                         </div>
+
+                        <div class="swiper-slide">
+                            <img src="brand-img/brand1.webp" alt="">
+                        </div>
+
                     </div>
 
-                    <div class="products-text">
-                        <h6>Teapot with black tea</h6>
-                        <p>Â£40.00 - Â£635.00</p>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-        <!--Product End-->
-
-        <section class="brand">
-            <div class="swiper brandSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand1.webp" alt="">
+            <section class="mail">
+                <div class="mail-control">
+                    <div class="text">
+                        <h4>Our Newsletter</h4>
+                        <p>Subscribe our newsletter and get discount 50% off</p>
                     </div>
-
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand2.webp" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand3.webp" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand4.webp" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand5.webp" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="brand-img/brand1.webp" alt="">
-                    </div>
-
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
-
-        <section class="mail">
-            <div class="mail-control">
-                <div class="text">
-                    <h4>Our Newsletter</h4>
-                    <p>Subscribe our newsletter and get discount 50% off</p>
-                </div>
-                <div class="input-container">
-                    <input type="email" placeholder="Your email address">
-                    <button>&rarr;</button>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
-                    <h4>Customer Service</h4>
-                    <ul>
-                        <li>
-                            <a href="">Help & Contact Us</a>
-                        </li>
-
-                        <li>
-                            <a href="">Returns & Refunds</a>
-                        </li>
-
-                        <li>
-                            <a href="">Online Stores</a>
-                        </li>
-
-                        <li>
-                            <a href="">Terms & Conditions</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
-                    <h4>Company</h4>
-                    <ul>
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-
-                        <li>
-                            <a href="">What We Do</a>
-                        </li>
-
-                        <li>
-                            <a href="">FAQ Page</a>
-                        </li>
-
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
-                    <h4>Social Media</h4>
-                    <ul>
-                        <li>
-                            <a href="">Twitter</a>
-                        </li>
-
-                        <li>
-                            <a href="">Instagram</a>
-                        </li>
-
-                        <li>
-                            <a href="">Tumblr</a>
-                        </li>
-
-                        <li>
-                            <a href="">Pinterest</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
-                    <h4>Newsletter</h4>
                     <div class="input-container">
                         <input type="email" placeholder="Your email address">
-                        <button class="arrow-button">→</button>
+                        <button>&rarr;</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li>
+                                <a href="">Help & Contact Us</a>
+                            </li>
+
+                            <li>
+                                <a href="">Returns & Refunds</a>
+                            </li>
+
+                            <li>
+                                <a href="">Online Stores</a>
+                            </li>
+
+                            <li>
+                                <a href="">Terms & Conditions</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <ul class="ul2">
-                        <li>
-                            <a href="">Term & Condition</a>
-                        </li>
+                    <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
 
-                        <li>
-                            <a href="">Policy</a>
-                        </li>
+                            <li>
+                                <a href="">What We Do</a>
+                            </li>
 
-                        <li>
-                            <a href="">Map</a>
-                        </li>
+                            <li>
+                                <a href="">FAQ Page</a>
+                            </li>
 
-                    </ul>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li>
+                                <a href="">Twitter</a>
+                            </li>
+
+                            <li>
+                                <a href="">Instagram</a>
+                            </li>
+
+                            <li>
+                                <a href="">Tumblr</a>
+                            </li>
+
+                            <li>
+                                <a href="">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 footer-box">
+                        <h4>Newsletter</h4>
+                        <div class="input-container">
+                            <input type="email" placeholder="Your email address">
+                            <button class="arrow-button">→</button>
+                        </div>
+
+                        <ul class="ul2">
+                            <li>
+                                <a href="">Term & Condition</a>
+                            </li>
+
+                            <li>
+                                <a href="">Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="">Map</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-           </div>
 
-           <div class="footer-bottom">
-            <div class="footer-rights">
-                <h6>© 2023 Helendo. All Rights Reserved.</h6>
-            </div>
+                <div class="footer-bottom">
+                    <div class="footer-rights">
+                        <h6>© 2023 Helendo. All Rights Reserved.</h6>
+                    </div>
 
-            <div class="footer-text">
-                <p>Follow Us On Social</p>
+                    <div class="footer-text">
+                        <p>Follow Us On Social</p>
 
-                <div class="socials">
-                    <img src="footer-img/facebook.svg" alt="">
-                    <img src="footer-img/twitterr.svg" alt="">
-                    <img src="footer-img/instagramm.svg" alt="">
+                        <div class="socials">
+                            <img src="footer-img/facebook.svg" alt="">
+                            <img src="footer-img/twitterr.svg" alt="">
+                            <img src="footer-img/tumblr.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </footer>
         </div>
-        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -679,7 +606,7 @@
                     slidesPerView: 4,
                 },
 
-           },
+            },
         });
 
 

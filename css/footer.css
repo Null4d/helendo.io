@@ -100,26 +100,26 @@ input:focus::placeholder {
     min-width: 0px;
 }
 
-.footer-rights h6 {
+.footer-bottom__rights {
     font-size: 16px;
     font-weight: 400;
 }
 
-.footer-text {
+.footer-bottom__text {
     display: flex;
 }
 
-.footer-text p {
+.footer-bottom__text p {
     font-size: 16px;
     font-weight: 500;
-    padding-right: 60px;
+    padding-right: 45px;
 }
 
-.socials {
+.footer-bottom__socials {
     display: flex;
-    gap: 20px;
+    padding-left: 20px;
 }
 
-.socials img {
+.footer-bottom__socials img {
     width: 18px;
 }

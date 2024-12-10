@@ -56,7 +56,6 @@
     object-fit: cover;
 }
 
-.hero-swiper__button-next,
-.hero-swiper__button-prev {
-    color: #666;
+.swiper-button-next, .swiper-button-prev {
+    color: #666 !important;
 }

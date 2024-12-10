@@ -4,6 +4,10 @@
     margin-left: auto;
 }
 
+.container {
+    padding: 0 15px;
+}
+
 .container-fluid {
     padding-right: 2rem;
     padding-left: 2rem;
@@ -268,7 +272,7 @@
 
 @media only screen and (min-width: 48em) {
     .container {
-        width: 49rem;
+        width: 100%;
     }
 
     .col-sm,
@@ -731,6 +735,7 @@
 @media only screen and (min-width: 75em) {
     .container {
         width: 73rem;
+        padding: 0;
     }
 
     .col-lg,

@@ -1,15 +1,20 @@
 .products {
-    padding: 120px 0;
+    padding-top: 70px;
+}
+
+.products-head__title {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .products-head__title h4 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .products-head__list {
     display: flex;
     gap: 20px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .products-head__list li a {
@@ -26,7 +31,6 @@
 .products-head__list li a.active {
     color: #999;
 }
-
 /* end product header */
 
 

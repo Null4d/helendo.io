@@ -7,10 +7,20 @@
     padding-top: 100px;
 }
 
+.brand-swiper__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-swiper__item img {
+    max-width: 100%;
+}
+
 
 .hero-swiper {
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 .hero-swiper__slide {
@@ -21,7 +31,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .hero-swiper__box {
     display: flex;
@@ -42,11 +51,15 @@
 
 .hero-swiper__info h3 {
     color: black;
-    font-size: 57px;
+    font-size: 35px;
     line-height: 1.1;
     padding-top: 25px;
     padding-bottom: 50px;
     font-weight: 500;
+}
+
+.hero-swiper__bg {
+    max-width: 300px;
 }
 
 .hero-swiper__bg img {

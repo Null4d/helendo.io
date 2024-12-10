@@ -10,7 +10,7 @@ var swiper = new Swiper(".heroSwiper", {
 
 var swiper = new Swiper(".brandSwiper", {
     spaceBetween: 30,
-    slidesPerView: 3,
+    slidesPerView: 2,
     loop: true,
     pagination: {
         nextEl: '.swiper-button-next',
@@ -18,11 +18,11 @@ var swiper = new Swiper(".brandSwiper", {
         clickable: true,
     },
     breakpoints: {
-        990: {
+        1024: {
             slidesPerView: 5,
         },
 
-        575: {
+        768: {
             slidesPerView: 4,
         },
 

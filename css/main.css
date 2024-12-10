@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    line-height: 1.74;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    visibility: visible;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    position: relative;
+    background-color: #f4f5f7;
+}
+
+::selection {
+    background-color: #dfa804;
+    color: white;
+}
+
+.margin-top {
+    margin-top: 75px;
+}
+
+.main-container {
+    max-width: 1330px;
+    margin: auto;
+    width: 100%;
+}
+
+#main-wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+:root {
+    --swiper-navigation-size: 20px !important;
+}
+

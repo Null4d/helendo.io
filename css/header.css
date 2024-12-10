@@ -43,7 +43,7 @@
 .header .header-nav li a {
     color: black;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 425;
     padding: 36px 2px;
     display: block;
 }
@@ -55,7 +55,7 @@
 }
 
 .header .header-bar__icon {
-    width: 30px;
+    width: 25px;
     height: 28px;
 }
 

@@ -1,22 +1,13 @@
 .mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1170px;
-    margin: auto;
     padding-top: 100px;
 }
 
-.mail-control {
-    display: flex;
-    align-items: center;
+.mail-content {
     background: #f4f5f7;
-    width: 100%;
-    justify-content: space-around;
     padding: 50px;
 }
 
-.mail-text {
+.mail-title {
     margin: 0;
     font-size: 26px;
     color: #000;
@@ -24,7 +15,7 @@
     font-weight: 500;
 }
 
-.mail-paragraf {
+.mail-text {
     color: #000;
     font-weight: 400;
     line-height: 1.41;

@@ -143,3 +143,13 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.product-filter h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-filter ul li {
+    margin-bottom: 6px;
+    font-weight: 400;
+}

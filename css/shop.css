@@ -1,0 +1,67 @@
+.shop-widget {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 37px;
+    padding-bottom: 37px;
+}
+
+.shop-widget:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.swatch-color {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: .5;
+    margin-right: 10px;
+}
+
+.swatch-color.black {
+    background-color: #000;
+}
+
+.swatch-color.green {
+    background-color: #81d742;
+}
+
+.swatch-color.grey {
+    background-color: #adadad;
+}
+
+.swatch-color.red {
+    background-color: #d33;
+}
+
+.swatch-color.blue {
+    background-color: rgb(34, 116, 238);
+}
+
+.swatch-color.yellow {
+    background-color: #ee2;
+}
+
+.widget-color .widget-nav-list li {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 20px;
+}
+
+.widget-nav-list li a {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagcloud a {
+    font-size: 16px;
+    padding-right: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+.tagcloud a::after {
+    content: ",";
+}

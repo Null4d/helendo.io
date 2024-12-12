@@ -77,6 +77,9 @@
     justify-content: flex-end;
 }
 
+.filter a {
+    color: black;
+}
 
 .tool-bar h6 {
     font-size: 16px;

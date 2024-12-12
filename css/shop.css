@@ -67,9 +67,15 @@
     font-weight: 400;
 }
 
+.tagcloud a:hover {
+    color: #dcb14a;
+    transition: .4s;
+}
+
 .tagcloud a::after {
     content: ",";
 }
+
 
 .tool-bar {
     display: flex;

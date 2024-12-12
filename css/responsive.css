@@ -30,11 +30,21 @@
     .footer-bottom__copy {
         text-align: start;
     }
-    
+
     .footer-bottom__text {
         display: flex;
         justify-content: flex-end;
     }
+
+    .tool-bar {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .filter {
+        justify-content: flex-end;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -82,4 +92,9 @@
     .products-head__title h4 {
         font-size: 35px;
     }
+
+    .categories-title h4 a {
+        font-size: 22px;
+    }
+    
 }

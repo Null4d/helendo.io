@@ -79,12 +79,14 @@
 .tool-bar {
     display: flex;
     font-weight: 400;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .filter {
     display: flex;
     font-weight: 400;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .filter a {

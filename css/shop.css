@@ -99,3 +99,30 @@
 .nav-link img {
     width: 100%;
 }
+
+.page-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.page-pagination li a {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+.page-pagination li {
+    padding: 8px 15px;
+    text-align: center;
+    position: relative;
+    color: #000;
+    background-color: #f5f5f5;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.page-pagination .current {
+    background-color: #dcb14a;
+}
+

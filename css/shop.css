@@ -55,6 +55,11 @@
     justify-content: space-between;
 }
 
+.widget-nav-list li a:hover {
+    color: #dcb14a;
+    transition: .4s;
+}
+
 .tagcloud a {
     font-size: 16px;
     padding-right: 5px;

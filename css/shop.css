@@ -2,6 +2,14 @@
     width: 20%;
 }
 
+.shop-widget.widget-size .widget-nav-list li a {
+    justify-content: space-between;
+}
+
+.shop-widget.widget-size .widget-nav-list li a p {
+    display: none;
+}
+
 .shop-widget:last-child {
     border-bottom: none;
     margin-right: 0px;
@@ -104,6 +112,46 @@
 .tool-bar p {
     padding-left: 20px;
     border-left: 1px solid black;
+}
+
+.shop {
+    display: flex;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-out;
+}
+
+.shop--vertical {
+    flex-direction: column;
+    overflow: visible;
+}
+
+.shop--vertical .shop-widget {
+    width: 100%;
+}
+
+.shop--vertical .shop-widget.widget-size .widget-nav-list li a p {
+    display: block;
+}
+
+.shop--vertical .product-filter {
+    order: 1;
+}
+
+.shop--vertical .widget-color {
+    order: 2;
+}
+
+.shop--vertical .widget-size {
+    order: 3;
+}
+
+.shop--vertical .widget-price {
+    order: 4;
+}
+
+.shop--vertical .widget-tags {
+    order: 5;
 }
 
 .nav-link {

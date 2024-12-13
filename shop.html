@@ -177,7 +177,7 @@
                 <section class="product-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-9 col-md-9 col-sm-9">
+                            <div class="col-lg-9 col-md-9 col-sm-12">
                                 <div class="row mb-25 mb-100">
                                     <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
                                         <div class="tool-bar">
@@ -196,7 +196,9 @@
                                                 <img src="img/shop/size2.svg" alt="">
                                             </a>
 
-                                            <a href="">Filter +</a>
+                                            <div id="filter">
+                                                Filter +
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- end col -->
@@ -204,126 +206,130 @@
 
                                 <div class="product-filter">
                                     <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 pl-15 d-flex">
-                                            <div class="shop-widget widget-color">
-                                                <div class="product-filter">
-                                                    <h6>Color</h6>
-                                                    <ul class="widget-nav-list d-flex flex-col">
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color black"></span>
-                                                                Black
-                                                            </a>
-                                                        </li>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div id="filterContent" class="shop d-flex">
+                                                <div class="shop-widget widget-color">
+                                                    <div class="product-filter">
+                                                        <h6>Color</h6>
+                                                        <ul class="widget-nav-list d-flex flex-col">
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color black"></span>
+                                                                    Black
+                                                                </a>
+                                                            </li>
 
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color green"></span>
-                                                                Green
-                                                            </a>
-                                                        </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color green"></span>
+                                                                    Green
+                                                                </a>
+                                                            </li>
 
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color grey"></span>
-                                                                Grey
-                                                            </a>
-                                                        </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color grey"></span>
+                                                                    Grey
+                                                                </a>
+                                                            </li>
 
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color red"></span>
-                                                                Red
-                                                            </a>
-                                                        </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color red"></span>
+                                                                    Red
+                                                                </a>
+                                                            </li>
 
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color blue"></span>
-                                                                Blue
-                                                            </a>
-                                                        </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color blue"></span>
+                                                                    Blue
+                                                                </a>
+                                                            </li>
 
-                                                        <li>
-                                                            <a href="">
-                                                                <span class="swatch-color yellow"></span>
-                                                                Yellow
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                            <li>
+                                                                <a href="">
+                                                                    <span class="swatch-color yellow"></span>
+                                                                    Yellow
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="shop-widget widget-size">
-                                                <div class="product-filter">
-                                                    <h6>Size</h6>
+                                                <div class="shop-widget widget-size">
+                                                    <div class="product-filter">
+                                                        <h6>Size</h6>
+                                                        <ul class="widget-nav-list">
+                                                            <li>
+                                                                <a href="">
+                                                                    Large
+                                                                    <p>1</p>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    Medium
+                                                                    <p>1</p>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    Small
+                                                                    <p>1</p>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="shop-widget Price">
+                                                    <div class="product-filter">
+                                                        <h6>Price</h6>
+                                                        <ul class="widget-nav-list">
+                                                            <li><a href="#">$0.00 - $20.00</a></li>
+                                                            <li><a href="#">20.00 - $40.00</a></li>
+                                                            <li><a href="#">Â£40.00 - Â£50.00</a></li>
+                                                            <li><a href="#">Â£50.00 - Â£60.00</a></li>
+                                                            <li><a href="#"> Â£60.00 +</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="shop-widget product-filter">
+                                                    <h6>Categories</h6>
                                                     <ul class="widget-nav-list">
-                                                        <li>
-                                                            <a href="">
-                                                                Large
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">
-                                                                Medium
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">
-                                                                Small
-                                                            </a>
-                                                        </li>
+                                                        <li><a href="#">All</a></li>
+                                                        <li><a href="#">Accessories</a></li>
+                                                        <li><a href="#">Chair</a></li>
+                                                        <li><a href="#">Decoration</a></li>
+                                                        <li><a href="#">Furniture</a></li>
+                                                        <li><a href="#">Table</a></li>
                                                     </ul>
                                                 </div>
-                                            </div>
 
-                                            <div class="shop-widget">
-                                                <div class="product-filter">
-                                                    <h6>Price</h6>
-                                                    <ul class="widget-nav-list">
-                                                        <li><a href="#">$0.00 - $20.00</a></li>
-                                                        <li><a href="#">20.00 - $40.00</a></li>
-                                                        <li><a href="#">Â£40.00 - Â£50.00</a></li>
-                                                        <li><a href="#">Â£50.00 - Â£60.00</a></li>
-                                                        <li><a href="#"> Â£60.00 +</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="shop-widget product-filter">
-                                                <h6>Categories</h6>
-                                                <ul class="widget-nav-list">
-                                                    <li><a href="#">All</a></li>
-                                                    <li><a href="#">Accessories</a></li>
-                                                    <li><a href="#">Chair</a></li>
-                                                    <li><a href="#">Decoration</a></li>
-                                                    <li><a href="#">Furniture</a></li>
-                                                    <li><a href="#">Table</a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="shop-widget">
-                                                <div class="product-filter">
-                                                    <h6>Tags</h6>
-                                                    <div class="tagcloud">
-                                                        <a href="">All</a>
-                                                        <a href="">Accesssories</a>
-                                                        <a href="">Box</a>
-                                                        <a href="">chair</a>
-                                                        <a href="">Deco</a>
-                                                        <a href="">Furniture</a>
-                                                        <a href="">Glass</a>
-                                                        <a href="">Pottery</a>
-                                                        <a href="">Table</a>
+                                                <div class="shop-widget Tags">
+                                                    <div class="product-filter">
+                                                        <h6>Tags</h6>
+                                                        <div class="tagcloud">
+                                                            <a href="">All</a>
+                                                            <a href="">Accesssories</a>
+                                                            <a href="">Box</a>
+                                                            <a href="">chair</a>
+                                                            <a href="">Deco</a>
+                                                            <a href="">Furniture</a>
+                                                            <a href="">Glass</a>
+                                                            <a href="">Pottery</a>
+                                                            <a href="">Table</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-content mt-100">
+                                <div class="tab-content">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="product">
@@ -607,6 +613,126 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-3 col-md-3 d-md-flex d-sm-none">
+                                <div class="shop shop--vertical">
+                                    <div class="shop-widget widget-color">
+                                        <div class="product-filter">
+                                            <h6>Color</h6>
+                                            <ul class="widget-nav-list d-flex flex-col">
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color black"></span>
+                                                        Black
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color green"></span>
+                                                        Green
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color grey"></span>
+                                                        Grey
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color red"></span>
+                                                        Red
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color blue"></span>
+                                                        Blue
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">
+                                                        <span class="swatch-color yellow"></span>
+                                                        Yellow
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop-widget widget-size">
+                                        <div class="product-filter">
+                                            <h6>Size</h6>
+                                            <ul class="widget-nav-list">
+                                                <li>
+                                                    <a href="">
+                                                        Large
+                                                        <p>1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        Medium
+                                                        <p>1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        Small
+                                                        <p>1</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop-widget widget-price">
+                                        <div class="product-filter">
+                                            <h6>Price</h6>
+                                            <ul class="widget-nav-list">
+                                                <li><a href="#">$0.00 - $20.00</a></li>
+                                                <li><a href="#">20.00 - $40.00</a></li>
+                                                <li><a href="#">Â£40.00 - Â£50.00</a></li>
+                                                <li><a href="#">Â£50.00 - Â£60.00</a></li>
+                                                <li><a href="#"> Â£60.00 +</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop-widget product-filter">
+                                        <h6>Categories</h6>
+                                        <ul class="widget-nav-list">
+                                            <li><a href="#">All</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Chair</a></li>
+                                            <li><a href="#">Decoration</a></li>
+                                            <li><a href="#">Furniture</a></li>
+                                            <li><a href="#">Table</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="shop-widget widget-tags">
+                                        <div class="product-filter">
+                                            <h6>Tags</h6>
+                                            <div class="tagcloud">
+                                                <a href="">All</a>
+                                                <a href="">Accesssories</a>
+                                                <a href="">Box</a>
+                                                <a href="">chair</a>
+                                                <a href="">Deco</a>
+                                                <a href="">Furniture</a>
+                                                <a href="">Glass</a>
+                                                <a href="">Pottery</a>
+                                                <a href="">Table</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -696,6 +822,30 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // const filter = document.getElementById('filter');
+        // const filterContent = document.getElementById('filterContent');
+
+        // // დაამატე click event listener div1-ზე
+        // filter.addEventListener('click', () => {
+        //     // toggle კლასის დამატება/მოშორება div2-ს
+        //     filterContent.classList.toggle('product-filter--active');
+        // });
+
+        const filter = document.getElementById('filter');
+        const filterContent = document.getElementById('filterContent');
+
+        filter.addEventListener('click', () => {
+            // თუ filterContent დახურულია (height = 0)
+            if (filterContent.style.height === '0px' || !filterContent.style.height) {
+                const contentHeight = filterContent.scrollHeight; // რეალური სიმაღლის მიღება
+                filterContent.style.height = contentHeight + 'px'; // სიმაღლის დაყენება
+            } else {
+                filterContent.style.height = '0px'; // სიმაღლის ნულამდე დაყვანა
+            }
+        });
+    </script>
 </body>
 
 </html>

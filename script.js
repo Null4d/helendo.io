@@ -48,3 +48,13 @@ function closeVideo() {
     videoModal.style.display = 'none';
 }
 //End youtube video modal
+
+// მოიძიე დივები
+const filter = document.getElementById('filter');
+const filterContent = document.getElementById('filterContent');
+
+// დაამატე click event listener div1-ზე
+filter.addEventListener('click', () => {
+    // toggle კლასის დამატება/მოშორება div2-ს
+     filterContent.classList.toggle('product-filter--active');
+});

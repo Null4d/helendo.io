@@ -35,12 +35,16 @@ body {
     margin-top: 75px;
 }
 
+.mt-100 {
+    margin-top: 100px;
+}
+
 .mt-150 {
     margin-top: 150px;
 }
 
-.mt-230 {
-    margin-top: 230px;
+.mb-230 {
+    margin-bottom: 230px;
 }
 
 .mb-25 {
@@ -53,6 +57,7 @@ body {
     width: 100%;
 }
 
+
 #main-wrapper {
     width: 100%;
     background-color: white;
@@ -64,4 +69,12 @@ body {
 
 .d-none {
     display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
 }

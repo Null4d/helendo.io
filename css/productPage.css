@@ -2,17 +2,13 @@
     width: 100%;
 }
 
-.product-content__swiper {
-    width: 200px;
+.product-content__image {
+    width: 100px;
     margin-right: 20px;
 }
 
 .product-details__content {
     margin-left: 10px;
-}
-
-.product-content__swiper img {
-    width: 100%;
 }
 
 .product-details__content h5 {

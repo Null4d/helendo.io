@@ -30,6 +30,19 @@ var swiper = new Swiper(".brandSwiper", {
 });
 //End brand swiper
 
+var swiper = new Swiper(".productSwiper", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+var swiper = new Swiper(".product-descSwiper", {
+    loop: true,
+    navigation: {
+        nextEl: ".hero-swiper__button-next",
+        prevEl: ".hero-swiper__button-prev",
+    },
+
+});
 function openVideo() {
     const videoModal = document.getElementById('video-box__modal');
     const youtubeVideo = document.getElementById('youtube-video');
@@ -56,5 +69,5 @@ const filterContent = document.getElementById('filterContent');
 // დაამატე click event listener div1-ზე
 filter.addEventListener('click', () => {
     // toggle კლასის დამატება/მოშორება div2-ს
-     filterContent.classList.toggle('product-filter--active');
+    filterContent.classList.toggle('product-filter--active');
 });

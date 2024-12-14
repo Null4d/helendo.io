@@ -51,6 +51,10 @@ body {
     margin-bottom: 25px;
 }
 
+.items-center {
+    align-items: center;
+}
+
 .main-container {
     max-width: 1330px;
     margin: auto;

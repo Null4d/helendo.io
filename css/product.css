@@ -156,3 +156,17 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+.product-desc__text h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.product-desc__text p {
+    font-weight: 400;
+}
+
+
+.product-desc__img {
+    width: 100%;
+}

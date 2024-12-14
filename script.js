@@ -36,6 +36,8 @@ var swiper = new Swiper(".productSwiper", {
 });
 
 var swiper = new Swiper(".product-descSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
     loop: true,
     navigation: {
         nextEl: ".hero-swiper__button-next",

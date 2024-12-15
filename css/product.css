@@ -191,6 +191,11 @@
     align-items: center;
 }
 
+.product-desc__text ul li a:hover {
+    color: #dcb14a;
+    transition: all .4s;
+}
+
 .product-desc-tringle {
     content: '';
     width: 0;

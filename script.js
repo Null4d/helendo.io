@@ -96,3 +96,6 @@ filter.addEventListener('click', () => {
     // toggle კლასის დამატება/მოშორება div2-ს
     filterContent.classList.toggle('product-filter--active');
 });
+
+
+

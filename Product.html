@@ -157,20 +157,20 @@
                                         molest.</p>
                                     <div class="product-content__size">
                                         <h2>Size</h2>
-                                        <div id="tab_list_L">L</div>
-                                        <div id="tab_list_M">M</div>
-                                        <div id="tab_list_S">S</div>
+                                        <div class="tab_list" id="tab_list_active">L</div>
+                                        <div class="tab_list">M</div>
+                                        <div class="tab_list">S</div>
                                     </div>
 
                                     <div class="product-content__sizeMenu">
                                         <li class="product-content__active">
-                                            <a href="">L</a>
+                                            <a href="#">L</a>
                                         </li>
                                         <li>
-                                            <a href="">M</a>
+                                            <a href="#">M</a>
                                         </li>
                                         <li>
-                                            <a href="">S</a>
+                                            <a href="#">S</a>
                                         </li>
                                     </div>
 
@@ -634,6 +634,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        // Tüm li elemanlarını seç
+        const liItems = document.querySelectorAll('.product-content__sizeMenu li');
+        // Tüm tab_list div'lerini seç
+        const tabLists = document.querySelectorAll('.tab_list');
+
+        // Tüm li elemanlarına tıklama olayı ekle
+        liItems.forEach((li, index) => {
+            li.addEventListener('click', function (event) {
+                event.preventDefault(); // Sayfanın yenilenmesini önler
+
+                // 1. Tüm li elemanlarından 'product-content__active' class'ını kaldır
+                liItems.forEach((item) => item.classList.remove('product-content__active'));
+
+                // 2. Tıklanan li'ye 'product-content__active' class'ını ekle
+                this.classList.add('product-content__active');
+
+                // 3. Tüm tab_list div'lerinden 'id="tab_list_active"' kaldır
+                tabLists.forEach((div) => div.removeAttribute('id'));
+
+                // 4. İlgili tab_list div'ine 'id="tab_list_active"' ekle
+                tabLists[index].setAttribute('id', 'tab_list_active');
+            });
+        });
+    </script>
 </body>
 
 </html>

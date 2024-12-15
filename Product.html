@@ -176,9 +176,8 @@
 
                                     <div class="product-content__colorMenu">
                                         <h4>Color</h4>
-                                        <div id="tab_list_Black">Black</div>
-                                        <div id="tab_list_White">White</div>
-
+                                        <div class="tab_list_color" id="tab_list_color_active">Black</div>
+                                        <div class="tab_list_color">White</div>
                                     </div>
 
                                     <div class="product-content__colorSelector">
@@ -193,7 +192,7 @@
                                             <div class="product-content__minus">-</div>
                                         </button>
 
-                                        <button class="active-button">
+                                        <button class="black-button">
                                             <div class="product-content__btnText">Add to cart</div>
                                         </button>
 
@@ -657,6 +656,28 @@
 
                 // 4. İlgili tab_list div'ine 'id="tab_list_active"' ekle
                 tabLists[index].setAttribute('id', 'tab_list_active');
+            });
+        });
+
+
+        // Toplar ve renk div'lerini seç
+        const balls = document.querySelectorAll('.product-content__ball');
+        const colorDivs = document.querySelectorAll('.tab_list_color');
+
+        // Her bir topa tıklama olayını ekle
+        balls.forEach((ball, index) => {
+            ball.addEventListener('click', function () {
+                // 1. Önceki 'active-ball' class'ını kaldır
+                balls.forEach((b) => b.classList.remove('active-ball'));
+
+                // 2. Tıklanan topa 'active-ball' class'ını ekle
+                ball.classList.add('active-ball');
+
+                // 3. Renk div'lerinden 'tab_list_color_active' id'sini kaldır
+                colorDivs.forEach((div) => div.removeAttribute('id'));
+
+                // 4. İlgili div'e 'tab_list_color_active' id'sini ekle
+                colorDivs[index].setAttribute('id', 'tab_list_color_active');
             });
         });
     </script>

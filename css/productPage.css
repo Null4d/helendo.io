@@ -86,10 +86,14 @@
     font-weight: 500;
 }
 
-#tab_list_Black,
-#tab_list_White {
+.tab_list_color {
     color: #666;
     font-weight: 500;
+    display: none;
+}
+
+#tab_list_color_active {
+    display: block;
 }
 
 .product-content__colorSelector {
@@ -114,6 +118,11 @@
 
 .active-ball {
     background: #000000;
+    color: white;
+}
+
+.active-ball:before {
+    content: '\2713';
 }
 
 .product-content__buttons {
@@ -123,7 +132,7 @@
     margin-bottom: 20px;
 }
 
-.active-button {
+.black-button {
     background-color: black !important;
 }
 
@@ -136,6 +145,11 @@
     border: 1px solid #ddd;
     background-color: white;
     cursor: pointer;
+}
+
+.product-content__buttons button:before {
+    background: #222;
+    transition: all .4s;
 }
 
 .product-content__buttons button:last-child {

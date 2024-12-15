@@ -51,6 +51,10 @@ body {
     margin-bottom: 25px;
 }
 
+.mb-100 {
+    margin-bottom: 100px;
+}
+
 .items-center {
     align-items: center;
 }

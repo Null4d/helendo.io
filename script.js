@@ -45,6 +45,29 @@ var swiper = new Swiper(".product-descSwiper", {
     },
 
 });
+
+var swiper = new Swiper(".productContentSwiper", {
+    slideClass: 'product-swiper__slide',
+    allowTouchMove: false,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    direction: 'vertical',
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".productContentSwiper2", {
+    slideClass: 'product-swiper__slide',
+    spaceBetween: 10,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
 function openVideo() {
     const videoModal = document.getElementById('video-box__modal');
     const youtubeVideo = document.getElementById('youtube-video');

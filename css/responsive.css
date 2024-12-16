@@ -101,3 +101,31 @@
         width: 590px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .productContentSwiper2 img {
+        width: 630px;
+    }
+
+    .col-lg-7.d-flex {
+        flex-direction: row;
+      }
+
+      .productContentSwiper {
+        box-sizing: border-box;
+        width: 105px;
+        height: 400px;
+    }
+
+    .productContentSwiper2 {
+        margin-left: 10px;
+    }
+
+    .product-desc {
+        flex-direction: row;
+    }
+
+    .product-desc__text {
+        width: 100%;
+    }
+}

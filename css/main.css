@@ -66,6 +66,9 @@ body {
     width: 100%;
 }
 
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
 
 #main-wrapper {
     width: 100%;

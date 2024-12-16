@@ -228,9 +228,14 @@
 .product-desc {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
     padding-bottom: 30px;
+}
+
+.product-desc__text {
+    width: 690px;
 }
 
 .product-desc__text h4 {
@@ -326,16 +331,20 @@
     background-position: center;
 }
 
+.col-lg-7.d-flex {
+    flex-direction: column-reverse;
+}
+
 .productContentSwiper2 {
     height: 100%;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .productContentSwiper {
     box-sizing: border-box;
-    width: 105px;
-    height: 400px;
+    width: 395px;
+    height: 100px;
 }
 
 .productContentSwiper .product-swiper__slide {
@@ -349,6 +358,6 @@
 }
 
 .productContentSwiper2 img {
-    width: 486px;
+    width: 745px;
     height: auto;
 }

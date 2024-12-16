@@ -33,6 +33,10 @@ var swiper = new Swiper(".brandSwiper", {
 var swiper = new Swiper(".productSwiper", {
     slidesPerView: 1,
     loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-next",
+    },
 });
 
 var swiper = new Swiper(".product-descSwiper", {
@@ -40,8 +44,8 @@ var swiper = new Swiper(".product-descSwiper", {
     spaceBetween: 30,
     loop: true,
     navigation: {
-        nextEl: ".hero-swiper__button-next",
-        prevEl: ".hero-swiper__button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-next",
     },
     breakpoints: {
         991: {
@@ -59,9 +63,14 @@ var swiper = new Swiper(".productContentSwiper", {
     allowTouchMove: false,
     spaceBetween: 10,
     slidesPerView: 1,
-    direction: 'vertical',
+    direction: 'horizontal',
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        768: {
+            direction: 'vertical',
+        }
+    },
 });
 var swiper2 = new Swiper(".productContentSwiper2", {
     slideClass: 'product-swiper__slide',

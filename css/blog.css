@@ -86,12 +86,24 @@
     content: "";
     position: absolute;
     bottom: -18px;
+    left: 0;
     height: 1.5px;
     width: 70px;
     background: rgba(180, 180, 180, .7);
     transition: all .8s;
 }
 
-.blog-content__item:hover .blog-content__text .blog-content__title::before {
+.blog-content__item .blog-content__text .blog-content__title::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    height: 1.5px;
+    width: 0;
     background: #dcb14a;
+    transition: all .8s;
+}
+
+.blog-content__item:hover .blog-content__text .blog-content__title::after {
+    width: 70px;
 }

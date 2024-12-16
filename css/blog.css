@@ -23,7 +23,7 @@
     position: absolute;
     background: white;
     padding: 8px 16px;
-    right: -125px;
+    right: -130px;
     bottom: 0;
     transition: all 0.5s ease;
 }
@@ -34,9 +34,8 @@
 
 .blog-content__item .blog-content__thumbnail .blog-content__info::after {
     content: "+";
-    transition: all .8s;
+    margin-left: 5px;
 }
-
 
 
 .blog-content__title {

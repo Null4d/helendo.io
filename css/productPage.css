@@ -248,6 +248,10 @@
     font-weight: 400;
 }
 
+.product-desc__textimg {
+    width: 50%;
+}
+
 .product-desc__img {
     width: 100%;
 }
@@ -358,6 +362,6 @@
 }
 
 .productContentSwiper2 img {
-    width: 745px;
+    width: 345px;
     height: auto;
 }

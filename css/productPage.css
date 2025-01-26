@@ -282,11 +282,30 @@
     border-left: 7px solid black;
 }
 
-.product-desc-title {
+.product-desc__title {
     font-size: 26px;
     text-align: center;
     margin-bottom: 55px;
 }
+
+.product-desc__swiper h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.product-desc__swiper h3::after {
+    content: "";
+    background-color: #dcb14a;
+    position: absolute;
+    height: 4px; 
+    width: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; 
+}
+
 
 .product-content__end {
     border-bottom: 1px solid #ddd;

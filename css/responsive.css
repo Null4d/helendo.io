@@ -19,10 +19,6 @@
         font-size: 40px;
     }
 
-    .hero-swiper {
-        height: 680px;
-    }
-
     .mail-input__container {
         margin-top: 0px;
     }
@@ -123,10 +119,6 @@
 
     .footer-bottom {
         margin-top: 100px;
-    }
-
-    .hero-swiper__bg {
-        max-width: 550px;
     }
 
     .about-box {

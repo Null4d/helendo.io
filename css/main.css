@@ -90,3 +90,11 @@ body {
 .flex-col {
     flex-direction: column;
 }
+
+.justify-end {
+    justify-content: end;
+}
+
+.w-full {
+    width: 100%;
+}

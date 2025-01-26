@@ -20,13 +20,12 @@
 
 .hero-swiper {
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .hero-swiper__slide {
     text-align: center;
     font-size: 18px;
-    background: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,24 +41,48 @@
 
 .hero-swiper__info {
     text-align: start;
+    position: absolute;
+    width: 100%;
+    max-width: 1150px;
 }
 
 .hero-swiper__info p {
-    color: #999;
+    color: #dcb14a;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.hero-swiper__info span {
     font-size: 16px;
+    font-weight: 400;
 }
 
 .hero-swiper__info h3 {
     color: black;
     font-size: 35px;
     line-height: 1.1;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
     font-weight: 500;
+    position: relative;
+}
+
+.hero-swiper__info h3::after {
+    background-color: #dcb14a;
+    position: absolute;
+    content: "";
+    min-height: 4px;
+    min-width: 70px;
+    max-height: 4px;
+    max-width: 70px;
+    left: 0;
+    bottom: 0;
 }
 
 .hero-swiper__bg {
-    max-width: 300px;
+    max-width: 100%;
 }
 
 .hero-swiper__bg img {

@@ -107,3 +107,22 @@
 .blog-content__item:hover .blog-content__text .blog-content__title::after {
     width: 70px;
 }
+
+
+.blog-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.blog-title::after {
+    content: "";
+    background-color: #dcb14a;
+    position: absolute;
+    height: 4px; 
+    width: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; 
+}

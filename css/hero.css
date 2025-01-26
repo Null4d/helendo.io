@@ -40,6 +40,8 @@
 }
 
 .hero-swiper__info {
+    display: flex;
+    flex-direction: column;
     text-align: start;
     position: absolute;
     width: 100%;
@@ -53,10 +55,6 @@
     line-height: 25px;
 }
 
-.hero-swiper__info span {
-    font-size: 16px;
-    font-weight: 400;
-}
 
 .hero-swiper__info h3 {
     color: black;
@@ -81,6 +79,28 @@
     bottom: 0;
 }
 
+.hero-swiper__info span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.hero-swiper__info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    background: black;
+    border: 0;
+    padding: 12px 0 12px 0;
+}
+
+.hero-swiper__info button a {
+    color: white;
+    font-weight: bold;
+}
+
+
 .hero-swiper__bg {
     max-width: 100%;
 }
@@ -94,6 +114,7 @@
 
 
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: #666 !important;
 }

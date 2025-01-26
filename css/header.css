@@ -10,11 +10,41 @@
     margin-right: auto;
 }
 
+.header-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-input input {
+    width: 100%;
+    border: none;
+    padding: 7px 50px 10px 0px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.header-input .search-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.search-button img {
+    width: 23px;
+}
+
 .header-top .header-top__logo {
     display: flex;
     justify-content: center;
     padding: 50px 0;
 }
+
 /*-----End header top-----*/
 
 .header-middle {
@@ -47,6 +77,7 @@
 .header-phone:hover svg {
     fill: #e9b005;
 }
+
 /*-----End Header Phone-----*/
 
 .header-nav {

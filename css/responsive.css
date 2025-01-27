@@ -136,4 +136,8 @@
     .productContentSwiper2 img {
         width: 590px;
     }
+
+    .footer-logo {
+        display: flex;
+    }
 }

@@ -36,6 +36,12 @@
     font-weight: 400;
 }
 
+.footer-box li a img {
+    width: 18px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
 .footer-box .footer-box__input {
     display: flex;
     align-items: center;
@@ -120,4 +126,15 @@
 
 .footer-bottom__socials img {
     width: 18px;
+}
+
+.footer-logo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    padding-bottom: 40px;
 }

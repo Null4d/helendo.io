@@ -1,18 +1,29 @@
 .mail {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .mail-content {
-    background: #f4f5f7;
     padding: 50px;
 }
 
 .mail-title {
     margin: 0;
-    font-size: 26px;
+    font-size: 42px;
     color: #000;
     line-height: 1.41;
     font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.mail-title::after {
+    background-color: #dcb14a;
+    position: absolute;
+    content: "";
+    height: 4px; 
+    width: 70px; 
+    left: 0;
+    bottom: 0;
 }
 
 .mail-text {
@@ -30,7 +41,7 @@
 
 .mail-input__container input[type="email"] {
     border: none;
-    background: #fff;
+    background: #f4f5f7;
     width: 100%;
     height: 54px;
     outline: none;
@@ -40,11 +51,12 @@
 
 .mail-input__container button {
     position: absolute;
-    padding: 0px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     right: 0;
-    background-color: white;
+    background-color: black;
+    color: white;
 }

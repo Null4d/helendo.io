@@ -1,4 +1,4 @@
-var swiper = new Swiper(".heroSwiper", {
+var swiper = new Swiper("#heroSwiper", {
     loop: true,
     navigation: {
         nextEl: ".hero-swiper__button-next",

@@ -1,19 +1,17 @@
 .decorate {
     position: relative;
 }
-
+.decorate-bg {
+    padding: 60px 0;
+}
 .decorate-info {
-    position: absolute;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
     height: 100%;
 }
 
-.decorate-info h3 {
-    width: 650px;
+.decorate-info__title {
     font-size: 36px;
     color: #111;
     line-height: 1.41;
@@ -22,7 +20,7 @@
     position: relative;
 }
 
-.decorate-info h3:after {
+.decorate-info__title:after {
     background-color: #dcb14a;
     position: absolute;
     content: "";
@@ -32,48 +30,43 @@
     bottom: 0;
 }
 
-.red-span {
+.decorate-info__redtxt {
     font-size: 36px;
     color: red;
 }
 
-.decorate-info p {
-    
+.decorate-info__desc {
     font-weight: 400;
 }
 
 .countdown {
     display: flex;
-    gap: 55px;
+    gap: 20px;
     margin-bottom: 60px;
 }
 
-.time-box {
+.countdown-item {
     text-align: center;
 }
 
-.time-box span {
+.countdown-item__number {
     display: block;
-    font-size: 68px;
+    font-size: 28px;
     font-family: "Prata", serif;
 }
 
-.time-box label {
-    font-size: 1.1rem;
+.countdown-item__text {
     color: black;
+    font-size: 16px;
 }
 
-.dot {
+.countdown-dot {
     display: flex;
-    align-items: center;
-    font-size: 55px;
+    font-size: 26px;
+    padding-top: 0;
 }
 
-.decorate-button__box {
-    width: 650px;
-}
-
-.decorate-button {
+.decorate-infobox__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,18 +75,10 @@
     border: 0;
     padding: 12px 0 12px 0;
     transition: 0.4s;
-}
-
-.decorate-button:hover {
-    background: #222222;
-}
-
-.decorate-button a {
     color: white;
+
 }
 
-.decorate-img {
-    max-width: 100%;
-    height: auto;    
-    display: block; 
+.decorate-infobox__btn:hover {
+    background: #222222;
 }

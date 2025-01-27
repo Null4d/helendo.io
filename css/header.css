@@ -4,19 +4,14 @@
     width: 100%;
 }
 
-.header-top {
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header-input {
+.header-search {
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
-.header-input input {
+.header-search__input {
     width: 100%;
     border: none;
     padding: 7px 50px 10px 0px;
@@ -26,7 +21,7 @@
     font-size: 16px;
 }
 
-.header-input .search-button {
+.header-search__btn {
     font-size: 20px;
     background: none;
     border: none;
@@ -35,93 +30,29 @@
     right: 0;
 }
 
-.search-button img {
+.header-search__btn  img {
     width: 23px;
 }
+/*-----End header search-----*/
 
-.header-top .header-top__logo {
+.header-logo {
     display: flex;
-    justify-content: center;
-    padding: 50px 0;
+    padding: 36px 0;
 }
 
-/*-----End header top-----*/
+/*-----End header logo-----*/
 
-.header-middle {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.header-phone {
-    display: flex;
-}
-
-.header-phone svg {
-    width: 25px;
-    fill: black;
-    transition: all .4s;
-}
-
-.header-phone p {
-    font-size: 18px;
-    padding-left: 5px;
-    color: black;
-    font-weight: 400;
-    transition: all .4s;
-}
-
-.header-phone:hover p {
-    color: #e9b005;
-}
-
-.header-phone:hover svg {
-    fill: #e9b005;
-}
-
-/*-----End Header Phone-----*/
-
-.header-nav {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-weight: bold;
-}
-
-.header-nav li a {
-    color: black;
-    font-size: 16px;
-    font-weight: 425;
-    padding: 6px 2px;
-    display: block;
-}
-
-.header-bar {
+.header-minmenu {
     display: flex;
     gap: 25px;
     justify-content: flex-end;
 }
 
-.header-bar__icon {
+.header-minmenu__icon {
     width: 25px;
     height: 28px;
 }
 
-.header-bar__icon img {
+.header-minmenu__icon img {
     width: 100%;
-}
-
-.header-bar__icon a {
-    display: flex;
-    width: 25px;
-}
-
-.header-bar__icon a svg {
-    width: 100%;
-    height: 100%;
-    fill: black;
-    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.header-bar__icon a svg:hover {
-    fill: #e9b005;
 }

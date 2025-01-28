@@ -79,6 +79,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
+
     .d-md-block {
         display: block;
     }
@@ -90,9 +91,11 @@
     .d-md-none {
         display: none;
     }
+
     .header-logo {
-   justify-content: center;
+        justify-content: center;
     }
+
     .hero-swiper__info h3 {
         font-size: 57px;
     }
@@ -149,5 +152,31 @@
     .countdown-dot {
         font-size: 55px;
         padding-top: 10px;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .selling-responsive {
+        display: flex;
+        align-items: normal;
+        flex-direction: row;
+    }
+
+    .selling-img img {
+        padding-bottom: 0;
+    }
+
+    .mail-content {
+        padding: 50px;
+    }
+
+    .header-top {
+        display: flex;
     }
 }
